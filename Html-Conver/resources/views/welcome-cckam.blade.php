@@ -1,15 +1,6 @@
-<!-- about -->
-@extends('layout/cckam/about-us')
-@section('about')
+<!-- index -->
+@include('layout/cckam/index')
 
-
-<!-- blog -->
-@extends('layout/cckam/blog')
-@section('')
-
-<!-- contact -->
-@extends('layout/cckam/contact-us')
-@section('contact')
 
 
 

@@ -47,20 +47,20 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 | Route Template ECSTACY
 |--------------------------------------------------------------------------
-
+*/
     Route::get('/', function () {
         return view('welcome-ecstacy');
     });
-*/
+
 /*
 |--------------------------------------------------------------------------
 | Route Template ECSTACY
 |--------------------------------------------------------------------------
-*/
-Route::get('/', function () {
-    return view('welcome-magpie');
-});
 
+    Route::get('/', function () {
+        return view('welcome-magpie');
+    });
+*/
 
 
 

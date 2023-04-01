@@ -1,6 +1,6 @@
 <!-- index  -->
-@extends('layout/ecstacy/index')
-@section('')
+@include('/ecstacy/index-2')
+
 
 
 

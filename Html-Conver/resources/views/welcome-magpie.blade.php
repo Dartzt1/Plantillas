@@ -1,2 +1,2 @@
 <!-- index -->
-@include('magpie/index-6')
+@include('magpie/index')
