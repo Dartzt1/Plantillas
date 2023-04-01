@@ -1,31 +1,15 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
 <!-- Mirrored from gramentheme.com/html/magpie/index-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Mar 2023 01:43:18 GMT -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Magpie - Blog, Magazine Html Template</title>
-    
-    <!-- favicon -->
-    <link rel=icon href="magpie/assets/img/favicon.png" sizes="20x20" type="image/png">
 
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="magpie/assets/css/vendor.css">
-    <link rel="stylesheet" href="magpie/assets/css/responsive.css">
-    <link rel="stylesheet" href="magpie/assets/css/style.css">
-    <link rel="stylesheet" href="magpie/assets/css/responsive.css">
+    @include('magpie.partial.title')
+    @include('magpie.partial.stylesheet')
 
 </head>
 <body class="home-2">
 
+    @include('magpie.partial.start')    
 
     <!-- search popup start-->
     <div class="td-search-popup" id="td-search-popup">
@@ -2836,17 +2820,9 @@
         </div>
     </div>
     <!-- footer area end -->
-
-    <!-- back to top area start -->
-    <div class="back-to-top">
-        <span class="back-top"><i class="fa fa-angle-up"></i></span>
-    </div>
-    <!-- back to top area end -->
-
-    <!-- all plugins here -->
-    <script src="magpie/assets/js/vendor.js"></script>
-    <!-- main js  -->
-    <script src="magpie/assets/js/main.js"></script>
+    @include('magpie.partial.back-top-area')
+    @include('magpie.partial.plugins')
+    @include('magpie.partial.main-js')
 </body>
 
 <!-- Mirrored from gramentheme.com/html/magpie/index-4.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Mar 2023 01:43:42 GMT -->

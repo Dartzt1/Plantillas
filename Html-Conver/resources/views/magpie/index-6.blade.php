@@ -1,28 +1,9 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
 <!-- Mirrored from gramentheme.com/html/magpie/index-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Mar 2023 01:43:42 GMT -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Magpie - Blog, Magazine Html Template</title>
-    
-    <!-- favicon -->
-    <link rel=icon href="magpie/assets/img/favicon.png" sizes="20x20" type="image/png">
-
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="magpie/assets/css/vendor.css">
-    <link rel="stylesheet" href="magpie/assets/css/responsive.css">
-    <link rel="stylesheet" href="magpie/assets/css/style.css">
-    <link rel="stylesheet" href="magpie/assets/css/responsive.css">
-
+    @include('magpie.partial.title')
+    @include('magpie.partial.stylesheet')
 </head>
 <body class="home-2">
 
@@ -151,7 +132,6 @@
     </div>
     <!-- navbar end -->
 
-
     <!-- banner area start -->
     <div class="banner-area banner-area-home-4 banner-area-home-5">
         <div class="container">
@@ -233,7 +213,6 @@
         </div>
     </div>
     <!-- banner area end -->
-
 
     <!-- more news -->
     <section class="more-news">
@@ -704,7 +683,6 @@
     </section>
     <!-- map -->
 
-    
     <!-- video area start -->
     <div class="video-area  pd-bottom-25">
         <div class="container">
@@ -766,7 +744,6 @@
         </div>
     </div>
     <!-- video area end -->
-
 
     <!-- hottest -->
     <section class="hottest">
@@ -878,7 +855,6 @@
     </section>
     <!-- hottest -->
 
-
     <!-- footer area start -->
     <div class="footer-area home5-footer-area footer-bg pd-top-60">
         <div class="container">
@@ -953,17 +929,10 @@
         </div>
     </div>
     <!-- footer area end -->
-    
-        <!-- back to top area start -->
-        <div class="back-to-top">
-            <span class="back-top"><i class="fa fa-angle-up"></i></span>
-        </div>
-        <!-- back to top area end -->
-    
-        <!-- all plugins here -->
-        <script src="magpie/assets/js/vendor.js"></script>
-        <!-- main js  -->
-        <script src="magpie/assets/js/main.js"></script>
+
+    @include('magpie.partial.back-top-area')
+    @include('magpie.partial.plugins')
+    @include('magpie.partial.main-js')
     </body>
     
 <!-- Mirrored from gramentheme.com/html/magpie/index-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Mar 2023 01:43:57 GMT -->

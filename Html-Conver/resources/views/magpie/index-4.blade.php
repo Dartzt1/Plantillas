@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
 <!-- Mirrored from gramentheme.com/html/magpie/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Mar 2023 01:43:02 GMT -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Magpie - Blog, Magazine Html Template</title>
-    
-    <!-- favicon -->
-    <link rel=icon href="magpie/assets/img/favicon.png" sizes="20x20" type="image/png">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="magpie/assets/css/vendor.css">
-    <link rel="stylesheet" href="magpie/assets/css/style.css">
-    <link rel="stylesheet" href="magpie/assets/css/responsive.css">
+    @include('magpie.partial.title')
+    @include('magpie.partial.stylesheet')
 
 </head>
 <body>
@@ -948,15 +937,7 @@
     </div>
     <!-- trending area end -->
 
-    <!-- add area start -->
-    <div class="add-area bg-sky pd-top-60 pd-bottom-60">
-        <div class="container">
-            <div class="thumb">
-                <img class="w-100" src="magpie/assets/img/add/5.png" alt="img">
-            </div>
-        </div>
-    </div>
-    <!-- add area end -->
+    @include('magpie.partial.add')
 
     <!-- video post area start -->
     <div class="video-post-area pd-top-55 pd-bottom-25">
@@ -1441,183 +1422,11 @@
     </div>
     <!-- post area end -->
 
-    <!-- life-style area end -->
-    <div class="life-style-area pd-top-60 pd-bottom-30">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-post-wrap style-overlay">
-                        <div class="thumb">
-                            <img src="magpie/assets/img/post/92.png" alt="img">
-                        </div>
-                        <div class="details">
-                            <h5 class="title mb-2"><a href="blog-details.html">Caseload Global caseload tops April 2021</a></h5>
-                            <div class="post-meta-single">
-                                <ul>
-                                    <li><i class="fa fa-user"></i>Magpie</li>
-                                    <li><i class="fa fa-clock-o"></i> April 7, 2021</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-post-wrap style-overlay">
-                        <div class="thumb">
-                            <img src="magpie/assets/img/post/93.png" alt="img">
-                        </div>
-                        <div class="details">
-                            <h5 class="title mb-2"><a href="blog-details.html">Travel Place tops to moving Global world </a></h5>
-                            <div class="post-meta-single">
-                                <ul>
-                                    <li><i class="fa fa-user"></i>Magpie</li>
-                                    <li><i class="fa fa-clock-o"></i> April 7, 2021</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-post-wrap style-overlay">
-                        <div class="thumb">
-                            <img src="magpie/assets/img/post/94.png" alt="img">
-                        </div>
-                        <div class="details">
-                            <h5 class="title mb-2"><a href="blog-details.html">The secret to moving this ancient sphinx</a></h5>
-                            <div class="post-meta-single">
-                                <ul>
-                                    <li><i class="fa fa-user"></i>Magpie</li>
-                                    <li><i class="fa fa-clock-o"></i> April 7, 2021</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- life-style area end -->
-
-    <!-- footer area start -->
-    <div class="footer-area bg-black pd-top-60">
-        <div class="container">
-            <div class="footer-top">
-                <div class="subscribe-wrap">
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-4 align-self-center">
-                            <h4>SUBSCRIBE FOR NEWSLETTER</h4>
-                        </div>
-                        <div class="col-xl-9 col-lg-8 align-self-center mt-3 mt-lg-0">
-                            <div class="subscribe-inner">
-                                <input type="text" placeholder="Enter email address">
-                                <button class="btn btn-base-m">Subscribe</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="widget">
-                        <div class="widget_about">
-                            <a class="logo" href="index-2.html"><img src="magpie/assets/img/logo-2.png" alt="img"></a>
-                            <p>Magpie matrix economically sound value through cooperative technology task fully researched data and enterprise process improvements quality  products via client-focused results.</p>
-                            <ul class="social-area social-area-2 mt-4">
-                                <li><a class="facebook-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a class="twitter-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a class="youtube-icon" href="#"><i class="fa fa-youtube-play"></i></a></li>
-                                <li><a class="instagram-icon" href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a class="google-icon" href="#"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="widget widget_nav_menu">
-                        <h4 class="widget-title">Useful Link</h4>
-                        <ul>
-                            <li><a href="index-2.html">Home</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="cat-tech.html">Tech</a></li>
-                            <li><a href="blog-details.html">Blog Single</a></li>
-                            <li><a href="cat-fashion.html">Fashion</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="widget widget_nav_menu">
-                        <h4 class="widget-title">Category</h4>
-                        <ul>
-                            <li><a href="cat-tech.html">Tech</a></li>
-                            <li><a href="cat-fashion.html">Fashion</a></li>
-                            <li><a href="cat-lifestyle.html">Lifestyle</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="author.html">Author</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="widget widget_recent_post">
-                        <h5 class="widget-title">POPULAR NEWS</h5>
-                        <div class="single-post-list-wrap style-white">
-                            <div class="media">
-                                <div class="media-left">
-                                    <img src="magpie/assets/img/other/1.png" alt="img">
-                                </div>
-                                <div class="media-body align-self-center">
-                                    <div class="details">
-                                        <a class="cat-text cat-green" href="#">HEALTH</a>
-                                        <h6><a href="blog-details.html">Ratcliffe to be of nation talent</a></h6>
-                                        <div class="post-meta-single">
-                                            <ul>
-                                                <li><i class="fa fa-user"></i>Magpie</li>
-                                                <li><i class="fa fa-clock-o"></i> April 7, 2021</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-post-list-wrap style-white">
-                            <div class="media">
-                                <div class="media-left">
-                                    <img src="magpie/assets/img/other/1.png" alt="img">
-                                </div>
-                                <div class="media-body align-self-center">
-                                    <div class="details">
-                                        <a class="cat-text cat-green" href="#">HEALTH</a>
-                                        <h6><a href="blog-details.html">Ratcliffe to be of nation talent</a></h6>
-                                        <div class="post-meta-single">
-                                            <ul>
-                                                <li><i class="fa fa-user"></i>Magpie</li>
-                                                <li><i class="fa fa-clock-o"></i> April 7, 2021</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom text-center">
-            <p>2023 © All rights reserved by Bangla Theme</p>
-        </div>
-    </div>
-    <!-- footer area end -->
-
-    <!-- back to top area start -->
-    <div class="back-to-top">
-        <span class="back-top"><i class="fa fa-angle-up"></i></span>
-    </div>
-    <!-- back to top area end -->
-
-    <!-- all plugins here -->
-    <script src="magpie/assets/js/vendor.js"></script>
-    <!-- main js  -->
-    <script src="magpie/assets/js/main.js"></script>
+    @include('magpie.partial.life-style')
+    @include('magpie.partial.footer')
+    @include('magpie.partial.back-top-area')
+    @include('magpie.partial.plugins')
+    @include('magpie.partial.main-js')
 </body>
-
 <!-- Mirrored from gramentheme.com/html/magpie/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Mar 2023 01:43:18 GMT -->
 </html>

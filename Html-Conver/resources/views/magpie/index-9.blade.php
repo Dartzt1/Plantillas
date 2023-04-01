@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
 <!-- Mirrored from gramentheme.com/html/magpie/index-8.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Mar 2023 01:44:20 GMT -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Magpie - Blog, Magazine Html Template</title>
+
+    @include('magpie.partial.title')
+    @include('magpie.partial.stylesheet')
     
-    <!-- favicon -->
-    <link rel=icon href="magpie/assets/img/favicon.png" sizes="20x20" type="image/png">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="magpie/assets/css/vendor.css">
-    <link rel="stylesheet" href="magpie/assets/css/style.css">
-    <link rel="stylesheet" href="magpie/assets/css/responsive.css">
-
 </head>
 <body>
 
@@ -463,8 +452,6 @@
         </div>
     </div>
     <!-- informetion -->
-
-    <!--  -->
     
     <!-- footer area start -->
     <footer class="footer-7 footer-8">
@@ -551,17 +538,9 @@
     </footer>
     <!-- footer area end -->
 
-    <!-- back to top area start -->
-    <div class="back-to-top">
-        <span class="back-top"><i class="fa fa-angle-up"></i></span>
-    </div>
-    <!-- back to top area end -->
-
-    <!-- all plugins here -->
-    <script src="magpie/assets/js/vendor.js"></script>
-    <script src="magpie/assets/js/counterup.min.js"></script>
-    <!-- main js  -->
-    <script src="magpie/assets/js/main.js"></script>
+    @include('magpie.partial.back-top-area')
+    @include('magpie.partial.plugins')
+    @include('magpie.partial.main-js')
 </body>
 
 <!-- Mirrored from gramentheme.com/html/magpie/index-8.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Mar 2023 01:44:31 GMT -->
